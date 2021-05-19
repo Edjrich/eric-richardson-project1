@@ -11,8 +11,10 @@
 <!-- NEEDS NOTES, CLASSES, CONTAINERS, WRAPPERS -->
 
 <body>
+    <!-- HEADER STARTS -->
     <header>
         <h1>Sanctuary Helpers</h1>
+        <!-- Top nav starts -->
         <nav>
             <ul>
                 <li><a href=""></a>Home</li>
@@ -21,10 +23,12 @@
                 <li><a href=""></a>Contact</li>
             </ul>
         </nav>
+        <!-- Top nav ends -->
         <h2>Blog</h2>
     </header>
+    <!-- HEADER ENDS -->
 
-<!-- MAIN -->
+    <!-- MAIN STARTS -->
     <Main>
         <section>
             <img src="./Assets/blog-post-image.jpg" alt="">
@@ -35,11 +39,14 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, in, dolor eaque commodi recusandae incidunt eveniet architecto exercitationem fugit dolorum quod eos, vel ut amet dicta consequatur ratione maiores quia.</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto odio, ullam fugit ipsam doloribus tempore consequuntur hic. Quae consequuntur cupiditate vel autem neque modi repudiandae nisi voluptatem error? Accusamus, eligendi id impedit recusandae blanditiis deserunt maiores aut, hic reiciendis perspiciatis architecto, iste at! Perspiciatis deserunt fugit expedita saepe delectus consequuntur.</p>
         </section>
+
+        <!-- Sidebar starts -->
         <aside>
             <h4>Our Mission</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores consequatur temporibus quibusdam nemo fugit.</p>
             <h4>Recent Posts</h4>
 
+            
             <img src="./Assets/sidebar-image.jpg" alt="">
             <ul>
                 <li>Lorem ipsum dolor sit.</li>
@@ -48,8 +55,10 @@
                 <li>Lorem, ipsum dolor.</li>
             </ul>
         </aside>
+        <!-- Sidebar ends -->
 
-        <section>
+        <!-- Blog comments start -->
+        <article>
             <img src="./Assets/comment-image.jpg" alt="">
             <h5>Tuesday October 9th 2019 by Davin</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorum quibusdam recusandae incidunt deleniti minus, reiciendis magnam quos animi eius, iste facilis officiis ducimus debitis ut dolores, aut delectus earum placeat atque laborum mollitia? Voluptatum sit necessitatibus reprehenderit consequatur ex, sequi expedita.</p>
@@ -57,23 +66,32 @@
             <img src="./Assets/comment-image2.jpg" alt="">
             <h5>Wednesday October 10th, 2019 by Lisa</h5>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem ipsam veritatis reiciendis rerum cumque mollitia maiores optio itaque architecto eveniet!</p>
-        </section>
+        </article>
+        <!-- Blog comments end -->
 
-        <form action="#" method="#" class="" name=""">
+        <!-- does the form need method? -->
+        <form action="submit">
+            <!-- labels should eventually have class(s) -->
             <label for="name"></label>
             <input type="text" id="name" name="name" placeholder="Name">
             <!-- should the placeholder be capatlized, or is this done in CSS? -->
+            <!-- review if class is required -->
             <label for="email"></label>
             <input type="email" id="email" name="email" placeholder="Email Address">
 
-            <label for=""></label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <label for="comment"></label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
 
             <button type="submit">Post comment</button>
         </form>
     </Main>
+    <!-- MAIN ENDS -->
 
-    <footer> <p class="copyright">Copyright (copyright icon) Hackeryou (CHECK THE NOTES TO SEE WHAT IS REALLY SUPPOSED TO BE HERE!!!!</p></footer>
+    <!-- FOOTER STARTS -->
+    <footer> 
+        <p class="copyright">Copyright (copyright icon) Hackeryou (CHECK THE NOTES TO SEE WHAT IS REALLY SUPPOSED TO BE HERE!!!!</p>
+    </footer>
+    <!-- FOOTER ENDS -->
 
 </body>
 </html>
