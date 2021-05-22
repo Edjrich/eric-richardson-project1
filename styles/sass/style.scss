@@ -1,2 +1,72 @@
 @import 'setup';
 @import 'variables';
+
+// GENERAL STYLES
+
+.wrapper {
+    @include wrapper;
+}
+
+.menu-underline {
+    border-bottom: yellow 3px solid;
+}
+
+.copyright {
+    @include body-text;
+    margin: 0%;
+    padding: 5px;
+    text-align: center;
+    color: $white;
+}
+// make sure footer p has copyright class for all html pages
+
+// HEADER STYLES
+
+
+// CONTACT STYLES
+
+.contact-body {
+    background-color: $ice;
+}
+
+.contact-header {
+    background-image: url(/Assets/contact-image.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    background-position: center;
+}
+
+.logo {
+    @include logo;
+    width: 20%; 
+    padding: 10px;
+    // above may not be needed?
+}
+
+.top-text-container {
+    display: flex;
+    justify-content: space-between
+}
+
+// considering changing selector! 
+.top-menu {
+    @include nav-text;
+    display: flex;
+    flex-direction: row;
+    li a {
+        padding: 15px;
+        margin: 5px;
+        text-decoration: none;
+        color: $black;
+    }
+}
+
+.heading-outline {
+    @include heading-outline
+}
+
+.contact-footer {
+    background-color: $black;
+}

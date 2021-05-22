@@ -234,3 +234,94 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.wrapper {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.menu-underline {
+  border-bottom: yellow 3px solid;
+}
+
+.copyright {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin: 0%;
+  padding: 5px;
+  text-align: center;
+  color: #f5f5f5;
+}
+
+.contact-body {
+  background-color: #E0FDDF;
+}
+
+.contact-header {
+  background-image: url(/Assets/contact-image.jpg);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+  background-position: center;
+}
+
+.logo {
+  font-family: "Kumar One", cursive;
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 20%;
+  padding: 10px;
+}
+
+.top-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top-menu {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.top-menu li a {
+  padding: 15px;
+  margin: 5px;
+  text-decoration: none;
+  color: #151514;
+}
+
+.heading-outline {
+  font-family: "Kumar One Outline", cursive;
+  font-size: 68px;
+  line-height: 64px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.contact-footer {
+  background-color: #151514;
+}
