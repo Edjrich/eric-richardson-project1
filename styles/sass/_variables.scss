@@ -40,6 +40,7 @@
         letter-spacing: 2.1px;
         font-weight: 400;
         text-transform: uppercase;
+        margin: 0;
     }
 
     @mixin logo() {
@@ -71,6 +72,15 @@
         font-weight: 400;
         text-transform: uppercase;
         text-align: center;
+        color: $white;
+        text-decoration: none
+    }
+
+    @mixin button-style {
+        @include button-text;
+        padding: 10px;
+        background-color: $evergreen;
+        border: 1px solid $black;
     }
 
     @mixin body-text {
@@ -86,6 +96,26 @@
         width: 90%;
         margin: 0 auto;
     }
+
+    @mixin font-awesome-style {
+        font-size: 40px;
+        background-color: $bright-yellow;
+        font-size: 30px;
+        padding: 15px;
+        border-radius: 80%;
+    }
+    
+
+    // @mixin hero-image($hero-image) {
+    //     background-image: url($hero-image?);
+    //     width: 100%;
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    //     height: 60vh;
+    //     background-position: center;
+    // }
+    // Is this how they work? How do I use this variable within 
+    
 
     // try mixin for pseudo elements! 
 

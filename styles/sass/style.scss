@@ -18,10 +18,82 @@
     text-align: center;
     color: $white;
 }
+
+.heading-regular{
+    @include heading-regular;
+}
+
+p {
+    @include body-text;
+}
 // make sure footer p has copyright class for all html pages
+
+
+// BIG REMINDER
+// ORGANIZE THIS FILE AS YOU GO
+// THIS IS A CONFUSING MESS RIGHT NOW
 
 // HEADER STYLES
 
+// change this to header at some point
+.index-header {
+    background-image: url(/Assets/header-home.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // height: 60vh;
+    // this appears to not work. smushes from below!
+    background-position: center;
+}
+
+.index-body{
+    background-color: $white;
+}
+
+.heading-outline {
+    @include heading-outline;
+}
+
+.discover-image-container img{
+    box-shadow: -17px 22px $bright-yellow;
+}
+// .index-main {
+//     background-color: $white;
+// }
+
+.button {
+    @include button-style;
+}
+
+// MAIN INDEX STYLES
+
+.discover-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0px;
+    .discover-text-container {
+        width: 69%;
+    }
+}
+
+.gallery-one {
+    background-color: $ice;
+}
+
+.gallery-one-grid-container {
+    // is this container really needed, could I do this all on the section?
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 80px 0px;
+    .gallery-one-grid-item {
+        justify-self: center;
+    }
+}
+
+.fas {
+    @include font-awesome-style;
+}
 
 // CONTACT STYLES
 
@@ -37,6 +109,7 @@
     height: 60vh;
     background-position: center;
 }
+// Above is perfect, but want to try as mixin. Mixin is made made is called hero-image. have to figure out how to use variable in my 
 
 .logo {
     @include logo;
@@ -63,10 +136,11 @@
     }
 }
 
-.heading-outline {
-    @include heading-outline
+footer {
+    background-color: $black;
+    margin-top: 10px;
+    p {
+        margin: 10px;
+    }
 }
 
-.contact-footer {
-    background-color: $black;
-}
