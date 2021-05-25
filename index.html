@@ -67,6 +67,7 @@
                 <img class="gallery-one-grid-item" src="./Assets/gallery-image-3.jpg" alt="">
             </div>
         </section>
+        <!-- should the above gallery be a list? -->
         
 
         <!-- add <i> for font awesome -->
@@ -74,61 +75,96 @@
         <!-- Section should have a class -->
         <!-- Don't forget you're going to learn about grids tomorrow! -->
         <section>
-            <ul>
-                <li>
-                    <i class="fas fa-home"></i>
-                    <h3 class="heading-regular">Customized Styles</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti unde reiciendis cumque rerum dicta quos.
-                    </p>
-                </li>
-                <li>
-                    <i class="fas fa-users"></i>
-                    <h3 class="heading-regular">Community</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil at in atque blanditiis ipsum nemo soluta
-                        voluptatem.Saepe?</p>
-                </li>
-                <li>
-                    <i class="fas fa-file"></i>
-                    <!-- should blog h3 link to blog page? -->
-                    <h3 class="heading-regular">Blog</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facere id minus necessitatibus natus?</p>
-                </li>
-                <li>
-                    <i class="fas fa-phone"></i>
-                    <!-- should this (below) link to the contact page? Might be a nice touch -->
-                    <h3 class="heading-regular">Get in touch</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias soluta optio repellendus!</p>
-                </li>
-            </ul>
+            <div class="wrapper">
+                <ul>
+                    <div class="grid-list">
+                        <div class="grid-item grid-item-one">
+                            <li>
+                                <i class="fas fa-home"></i>
+                                <h3 class="heading-regular">Customized Styles</h3>
+                                <p>Lorem, ipsum dolor sit amet consecteturadipisicing elit. Corrupti unde reiciendis cumquererum dicta quos.
+                                </p>
+                            </li>
+                        </div>
+                        <div class="grid-item grid-item-two">
+                            <li>
+                                <i class="fas fa-users"></i>
+                                <h3 class="heading-regular">Community</h3>
+                                <p>Lorem ipsum dolor sit amet consecteturadipisicing elit. Nihil at in atque blanditiisipsum nemo soluta
+                                    voluptatem.Saepe?</p>
+                            </li>
+                        </div>
+                        <div class="grid-item grid-item-three">
+                            <li>
+                                <i class="fas fa-file"></i>
+                                <!-- should blog h3 link to blog page? -->
+                                <h3 class="heading-regular">Blog</h3>
+                                <p>Lorem ipsum dolor sit amet consecteturadipisicing elit. Incidunt facere id minusnecessitatibus natus?</p>
+                            </li>
+                        </div>
+                        <div class="grid-item">
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <!-- should this (below) link to the contact page?Might be a nice touch -->
+                                <h3 class="heading-regular">Get in touch</h3>
+                                <p>Lorem ipsum dolor sit amet consecteturadipisicing elit. Molestias soluta optiorepellendus!</p>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div> <!-- wrapper ends -->
         </section>
 
         <!-- Should this be split into two section, or just two divs in the section? -->
+        <!-- consider renaming section -->
         <section class="gallery-two">
-            <div>
-                <img src="./Assets/left-image.jpg" alt="">
-            </div>
+            <!-- <div class="gallery-two-top"> -->
+                <div>
+                    <img class="gallery-two-image" src="./Assets/left-image.jpg" alt="">
+                </div>
+                    
+                <div class="gallery-two-text">
+                    <h4 class="heading-regular">Group Programs</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam suscipit libero eveniet distinctio quia
+                    recusandae neque alias at voluptate sint, dolore iusto impedit culpa optio!</p>
+                    <a class="button" href="">Read more</a>
+                </div>
+            <!-- </div> -->
+
+            <!-- divs NEED names -->
+            <!-- put grid-column: 2; on 4th div -->
             
-            <div>
-                <h4 class="heading-regular">Group Programs</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam suscipit libero eveniet distinctio quia
-                recusandae neque alias at voluptate sint, dolore iusto impedit culpa optio!</p>
-                <a class="button" href="">Read more</a>
-            </div>
+            <!-- <div class="gallery-two-bottom"> -->
+                <div class="gallery-two-image-bottom">
+                    <img class="gallery-two-image" src="./Assets/right-image.jpg" alt="">
+                </div>
+                    
+                <div class="gallery-two-text-bottom">
+                    <h4 class="heading-regular">New Locations</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam sequi eligendi sit fugiat! Omnis obcaecati
+                        mollitia
+                        delectus dignissimos corrupti eaque, reprehenderit facere quo ex!</p>
+                    <a class="button" href="">Read more</a>
+                </div>
+            <!-- </div> -->
             
             
-            <img src="./Assets/right-image.jpg" alt="">
-            <h4 class="heading-regular">New Locations</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam sequi eligendi sit fugiat! Omnis obcaecati mollitia
-                delectus dignissimos corrupti eaque, reprehenderit facere quo ex!</p>
-            <a class="button" href="">Read more</a>
         </section>
         
 
         <!-- should this be an aside? -->
-        <aside>
-            <h5 class="heading-regular">Search by style</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis blanditiis necessitatibus asperiores quae incidunt, et laboriosam dolorum, soluta, explicabo eligendi officia omnis vitae. Id dolores omnis, veritatis harum dicta sit obcaecati aperiam, culpa placeat optio, pariatur blanditiis iusto accusamus ad.</p>
-            <a class="button" href="">Find out more</a>
+        <aside class="index-aside">
+            <div class="banner-image">
+                <img src="/Assets/banner-image.jpg" alt="">
+            </div>
+            <div class="wrapper">
+                <h5 class="heading-regular">Search by style</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis blanditiis necessitatibus asperiores quae
+                incidunt, et laboriosam dolorum, soluta, explicabo eligendi officia omnis vitae. Id dolores omnis, veritatis harum
+                dicta sit obcaecati aperiam, culpa placeat optio, pariatur blanditiis iusto accusamus ad.</p>
+                <a class="button" href="">Find out more</a>
+            </div>
+            
         </aside>
         
     </main>
