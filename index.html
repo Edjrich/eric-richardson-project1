@@ -24,16 +24,16 @@
                     <ul class="top-menu">
                         <li><a href=""><span class="menu-underline">Home</span></a></li>
                         <li><a href="">About</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div> 
         </div> <!-- wrapper ends -->
         
         <!-- div needs class -->
-        <div>
-            <img src="./Assets/header-box.png" alt="">
+        <div class="index-header-image">
+            <img src="./Assets/header-box.png" alt="Two dark blue leather chairs sitting next to each other with a green throw pillow">
         </div>
 
     </header> <!-- HEADER ENDS -->
@@ -49,7 +49,7 @@
                     </div>
                     <!-- div needs class -->
                     <div class="discover-image-container">
-                        <img src="./Assets/small-box.jpg" alt="">
+                        <img src="./Assets/small-box.jpg" alt="The living room of a moodern home. A grey couch with two off white throw pillows with an oil painting hung above it.">
                     </div>
                 </div>
             </div> <!-- wrapper ends -->
@@ -62,9 +62,9 @@
         <!-- div needs class (gallery?) -->
         <section class="gallery-one">
             <div class="wrapper gallery-one-grid-container">
-                <img class="gallery-one-grid-item" src="./Assets/gallery-image-1.jpg" alt="">
-                <img class="gallery-one-grid-item" src="./Assets/gallery-image-2.jpg" alt="">
-                <img class="gallery-one-grid-item" src="./Assets/gallery-image-3.jpg" alt="">
+                <img class="gallery-one-grid-item" src="./Assets/gallery-image-1.jpg" alt="Green unit of drawers with art on top of it">
+                <img class="gallery-one-grid-item" src="./Assets/gallery-image-2.jpg" alt="A room with an orange couch, polka dot pillows, and a studded black table with magazines on it.">
+                <img class="gallery-one-grid-item" src="./Assets/gallery-image-3.jpg" alt="A wicker chair with an acoustic guitar in the background">
             </div>
         </section>
         <!-- should the above gallery be a list? -->
@@ -78,6 +78,7 @@
             <div class="wrapper">
                 <ul>
                     <div class="grid-list">
+                        <!-- should the <i> be in a div? flex or grid the i? -->
                         <div class="grid-item grid-item-one">
                             <li>
                                 <i class="fas fa-home"></i>
@@ -118,27 +119,27 @@
         <!-- Should this be split into two section, or just two divs in the section? -->
         <!-- consider renaming section -->
         <section class="gallery-two">
-            <!-- <div class="gallery-two-top"> -->
-                <div>
-                    <img class="gallery-two-image" src="./Assets/left-image.jpg" alt="">
+            <div class="large-wrapper">
+                <div class="gallery-two-image">
+                    <img class="gallery-two-image-top" src="./Assets/left-image.jpg" alt="White chairs at desk with a plant on it.">
                 </div>
-                    
+                
                 <div class="gallery-two-text">
                     <h4 class="heading-regular">Group Programs</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam suscipit libero eveniet distinctio quia
-                    recusandae neque alias at voluptate sint, dolore iusto impedit culpa optio!</p>
+                        recusandae neque alias at voluptate sint, dolore iusto impedit culpa optio!</p>
                     <a class="button" href="">Read more</a>
                 </div>
-            <!-- </div> -->
-
-            <!-- divs NEED names -->
-            <!-- put grid-column: 2; on 4th div -->
-            
-            <!-- <div class="gallery-two-bottom"> -->
-                <div class="gallery-two-image-bottom">
-                    <img class="gallery-two-image" src="./Assets/right-image.jpg" alt="">
+                <!-- </div> -->
+                
+                <!-- divs NEED names -->
+                <!-- put grid-column: 2; on 4th div -->
+                
+                <!-- <div class="gallery-two-bottom"> -->
+                <div class="gallery-two-image">
+                    <img class="gallery-two-image-bottom" src="./Assets/right-image.jpg" alt="Two wicker chairs sitting outside in the sunshine with a wicker table between them">
                 </div>
-                    
+                
                 <div class="gallery-two-text-bottom">
                     <h4 class="heading-regular">New Locations</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam sequi eligendi sit fugiat! Omnis obcaecati
@@ -146,18 +147,18 @@
                         delectus dignissimos corrupti eaque, reprehenderit facere quo ex!</p>
                     <a class="button" href="">Read more</a>
                 </div>
-            <!-- </div> -->
-            
-            
+                <!-- </div> -->
+            </div> 
+          <!-- large-wrapper ends -->
         </section>
         
 
         <!-- should this be an aside? -->
-        <aside class="index-aside">
+        <section class="">
             <div class="banner-image">
-                <img src="/Assets/banner-image.jpg" alt="">
+                <img src="/Assets/banner-image.jpg" alt="A living room setup with a large orange couch with throw pillows, flanked by two chairs.">
             </div>
-            <div class="wrapper">
+            <div class="wrapper search-text-container">
                 <h5 class="heading-regular">Search by style</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis blanditiis necessitatibus asperiores quae
                 incidunt, et laboriosam dolorum, soluta, explicabo eligendi officia omnis vitae. Id dolores omnis, veritatis harum
@@ -165,14 +166,14 @@
                 <a class="button" href="">Find out more</a>
             </div>
             
-        </aside>
+        </section>
         
     </main>
     <!-- MAIN ENDS -->
 
     <!-- FOOTER STARTS -->
     <footer>
-        <p class="copyright">Copyright (copyright icon) Hackeryou</p>
+        <p class="copyright">Created by Eric Richardson at Juno College</p>
     </footer>
     <!-- FOOTER ENDS -->
     

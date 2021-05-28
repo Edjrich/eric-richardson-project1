@@ -9,7 +9,7 @@
     <!-- Font awesome links -->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/7ab4a014bd.js" crossorigin="anonymous"></script>
-    <title>Blog</title>
+    <title>Sanctuary Helpers Blog</title>
 </head>
 
 
@@ -24,10 +24,10 @@
                 <!-- Top nav starts -->
                 <nav>
                     <ul class="top-menu">
-                        <li><a href="">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="">About</a></li>
                         <li><a href=""><span class="menu-underline">Blog</span></a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -40,65 +40,87 @@
 
     <!-- MAIN STARTS -->
     <Main class="blog-main">
-        <div class="grid-container">
+        <div class="blog-flex-container">
             <!-- fix indentation -->
         <section>
-            <div class="wrapper">
-                <img src="./Assets/blog-post-image.jpg" alt="">
-                <h3 class="heading-regular">Finding the right pieces for new space</h3>
-                <p>Date (Monday October 5th, 2019 by Saron)</p>
-                <!-- should this time be a different element? -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsam odit ad pariatur inventore sit error natus
-                blanditiis, dolores ex.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, in, dolor eaque commodi recusandae incidunt
-                eveniet architecto exercitationem fugit dolorum quod eos, vel ut amet dicta consequatur ratione maiores quia.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto odio, ullam fugit ipsam doloribus tempore
-                consequuntur hic. Quae consequuntur cupiditate vel autem neque modi repudiandae nisi voluptatem error? Accusamus,
-                eligendi id impedit recusandae blanditiis deserunt maiores aut, hic reiciendis perspiciatis architecto, iste at!
-                Perspiciatis deserunt fugit expedita saepe delectus consequuntur.</p>
+            <div class="new-space-container">
+                <img src="./Assets/blog-post-image.jpg" alt="A bed with a blue frame and white sheets with a painting hung above it">
+                <div class="new-space-text-container">
+                    <h3 class="heading-regular">Finding the right pieces for new space</h3>
+                    <p class="date">Date (Monday October 5th, 2019 by Saron)</p>
+                    <!-- should this time be a different element? -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eaque, deleniti iure ipsam tempore quis. Provident soluta, dicta voluptates quisquam ad, dolorem possimus, quis harum asperiores reprehenderit nesciunt iusto aut..</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, in, dolor eaque commodi recusandae incidunt
+                    eveniet architecto exercitationem fugit dolorum quod eos, vel ut amet dicta consequatur ratione maiores quia.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto odio, ullam fugit ipsam doloribus tempore
+                    consequuntur hic. Quae consequuntur cupiditate vel autem neque modi repudiandae nisi voluptatem error? Accusamus,
+                    eligendi id impedit recusandae blanditiis deserunt maiores aut, hic reiciendis perspiciatis architecto, iste at!
+                    Perspiciatis deserunt fugit expedita saepe delectus consequuntur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et iure quasi earum laboriosam reprehenderit quam accusantium, doloremque culpa quidem eaque, a odio minus tenetur rerum!</p>
+                </div>
+                
             </div>
             
         </section>
 
         <!-- Sidebar starts -->
         <aside class="sidebar">
-            <div class="wrapper">
-                <img src="./Assets/sidebar-image.jpg" alt="">
+            <!-- <div class="wrapper"> -->
+            <div class="sidebar-image">
+                <img src="./Assets/sidebar-image.jpg" alt="A geometric light fixture installed in the ceiling">
                 <div class="sidebar-text-container">
                     <h4 class="heading-regular">Our Mission</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores consequatur temporibus quibusdam nemo fugit.
                     </p>
                     <h4 class="heading-regular">Recent Posts</h4>
+                    <ul>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                    </ul>
                 </div>
-                
-                <ul>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                </ul>
             </div>
         </aside>
-        </div>
-        <!-- flex-container ends -->
+        </div> <!-- grid-container ends -->
         <!-- Sidebar ends -->
 
         <!-- Blog comments start -->
         <article>
-            <h4 class="heading-regular">Comments</h4>
-            <img src="./Assets/comment-image.jpg" alt="">
-            <h5>Tuesday October 9th 2019 by Davin</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorum quibusdam recusandae incidunt deleniti minus, reiciendis magnam quos animi eius, iste facilis officiis ducimus debitis ut dolores, aut delectus earum placeat atque laborum mollitia? Voluptatum sit necessitatibus reprehenderit consequatur ex, sequi expedita.</p>
+            <div class="article-container">
+            <!-- <div> -->
+                <h4 class="heading-regular">Comments:</h4>
+                <div class="comment-flex-container">
+                    <div class="comment-image-container">
+                        <img src="./Assets/comment-image.jpg" alt="A person standing outside during dusk">
+                    </div>
+                    <div class="comment-text-container">
+                        <h5>Tuesday October 9th 2019 by Davin</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorum quibusdam recusandae incidunt deleniti minus,
+                        reiciendis magnam quos animi eius, iste facilis officiis ducimus debitis ut dolores, aut delectus earum placeat
+                        atque laborum mollitia? Voluptatum sit necessitatibus reprehenderit consequatur ex, sequi expedita.</p>
+                    </div>
+                </div>
 
-            <img src="./Assets/comment-image2.jpg" alt="">
-            <h5>Wednesday October 10th, 2019 by Lisa</h5>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem ipsam veritatis reiciendis rerum cumque mollitia maiores optio itaque architecto eveniet!</p>
+                <div class="comment-flex-container">
+                    <div class="comment-image-container">
+                        <img src="./Assets/comment-image2.jpg" alt="Two zebras standing side by side">
+                    </div>
+                    <div class="comment-text-container">
+                        <h5>Wednesday October 10th, 2019 by Lisa</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorum quibusdam recusandae incidunt deleniti minus,
+                        reiciendis magnam quos animi eius, iste facilis officiis ducimus debitis ut dolores, aut delectus earum placeat
+                        atque laborum mollitia? Voluptatum sit necessitatibus reprehenderit consequatur ex, sequi expedita. <p>
+                    </div>
+                </div>
+                
+            </div> <!-- wrapper ends -->
         </article>
         </div>
         <!-- Blog comments end -->
 
         <!-- does the form need method? -->
-        <form action="submit">
+        <form class="form-container" action="submit">
             <!-- labels should eventually have class(s) -->
             <label for="name"></label>
             <input type="text" id="name" name="name" placeholder="Name">
@@ -117,7 +139,7 @@
 
     <!-- FOOTER STARTS -->
     <footer> 
-        <p class="copyright">Copyright (copyright icon) Hackeryou (CHECK THE NOTES TO SEE WHAT IS REALLY SUPPOSED TO BE HERE!!!!</p>
+        <p class="copyright">Created by Eric Richardson at Juno College</p>
     </footer>
     <!-- FOOTER ENDS -->
 

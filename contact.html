@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumar+One+Outline&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/7ab4a014bd.js" crossorigin="anonymous"></script>
     <title>Sanctuary Helpers Contact</title>
 </head>
 
@@ -22,9 +24,9 @@
                     <h1 class="logo">Sanctuary Helpers</h1>
                     <nav>
                         <ul class="top-menu">
-                            <li><a href="">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="">About</a></li>
-                            <li><a href="">Blog</a></li>
+                            <li><a href="blog.html">Blog</a></li>
                             <li><a href=""><span class="menu-underline">Contact</span></a></li>
                         </ul>
                     </nav>
@@ -37,46 +39,57 @@
     <!-- HEADER ENDS -->
 
     <!-- MAIN STARTS -->
-    <main>
-        <form action="#" method="#" class="" name="""> 
-            <label for=" name"></label>
-            <input type="text" id="name" name="name" placeholder="Name">
-            <!-- should the placeholder be capatlized, or is this done in CSS? -->
-            <label for="email"></label>
-            <input type="email" id="email" name="email" placeholder="Email Address">
-        
-            <label for=""></label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-        
-            <button type="submit">Submit</button>
-        </form>
-
-<!-- Should this be an aside? -->
-<!-- Should these alllll be uls & lis? -->
-        <aside>
-            <ul>
-                <li><a href="">Social</a></li>
-                <li><a href="">Media</a></li>
-                <li><a href="">Place</a></li>
-                <li><a href="">Holders</a></li>
-            </ul>
-            <ul>
-                <li><a href="">info@email.com</a></li>
-            </ul>
-            <ul>
-                <li><a href="">123 - 456 - 7980</a></li>
-                <li><a href="">123 Queen Street East</a></li>
-                <li><a href="">Unit 10</a></li>
-                <li><a href="">Toronto, Ontario</a></li>
-                <li><a href="">M5V2D5</a></li>
-            </ul>
-        </aside>
+    <main class="contact-main">
+        <div class="large-wrapper contact-flex-container">
+            <form action="#" method="#" class="" name="""> 
+    
+                        <div class=" form-top-left">
+                <label for=" name"></label>
+                <input type="text" id="name" name="name" placeholder="Name">
+                </div>
+                <div class="form-top-right">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Email Address">
+                </div>
+            
+            
+            
+            
+                <div class="form-bottom">
+                    <label for="comment"></label>
+                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                </div>
+            
+                <button class="button" type="submit">Submit</button>
+            </form>
+            
+            <!-- Should this be an aside? -->
+            <!-- Should these alllll be uls & lis? -->
+            <aside>
+                <ul class="social-container">
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+                <ul class="side-menu">
+                    <li><a href="">info@email.com</a></li>
+                </ul>
+                <ul class="side-menu">
+                    <li><a href="">123 - 456 - 7980</a></li>
+                    <li><a href="">123 Queen Street West</a></li>
+                    <li><a href="">Unit 10</a></li>
+                    <li><a href="">Toronto, Ontario</a></li>
+                    <li><a href="">M5V2D5</a></li>
+                </ul>
+            </aside>
+        </div> <!-- wrapper/flex container ends -->
     </main> 
     <!-- MAIN ENDS -->
 
     <!-- FOOTER STARTS -->
     <footer class="contact-footer">
-        <p class="copyright ">Copyright (copyright icon) Hackeryou </p>
+        <p class="copyright ">Created by Eric Richardson at Juno College</p>
     </footer>
     <!-- FOOTER ENDS -->
 </body>

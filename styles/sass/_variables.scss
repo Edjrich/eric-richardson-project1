@@ -104,6 +104,22 @@
         padding: 15px;
         border-radius: 80%;
     }
+
+    @mixin box-shadow-left {
+        box-shadow: -17px 22px $bright-yellow;
+    }
+    @mixin box-shadow-right {
+        box-shadow: 17px 22px $bright-yellow;
+    }
+
+    @mixin remove-box-border {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style:solid;
+    // border-color: 
+    }
+
     
 
     // @mixin hero-image($hero-image) {
